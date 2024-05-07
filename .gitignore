@@ -1,0 +1,6 @@
+# List of untracked files to ignore
+resources
+slprj
+*_rtw
+*.slxc
+*.mexw64
