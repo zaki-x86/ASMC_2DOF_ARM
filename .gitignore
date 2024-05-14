@@ -4,3 +4,5 @@ slprj
 *_rtw
 *.slxc
 *.mexw64
+*.original
+*.autosave
