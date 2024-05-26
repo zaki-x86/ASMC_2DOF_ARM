@@ -119,13 +119,21 @@ $$ y_{21} = 0 $$
 
 $$ y_{22} = \ddot{x}_{r1} + \ddot{x}_{r2} $$
 
-$$ y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}) $$
+$$
+y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}) 
+$$
 
-$$ y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2}) $$
+$$
+y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2})
+$$
 
-$$ y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2) $$
+$$
+y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2)
+$$
 
-$$ y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2) $$
+$$
+y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2)
+$$
 
 ## Control Law
 
