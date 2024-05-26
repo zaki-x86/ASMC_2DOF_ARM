@@ -81,11 +81,57 @@ Given initial conditions:
 
 ![alt text](assets/2DOF_Arm_Simulink_Model.png)
 
+## System Signals
+
+$
+Y = \begin{bmatrix}
+y_{11} & y_{12} & y_{13} & y_{14} \\
+y_{21} & y_{22} & y_{23} & y_{24}
+\end{bmatrix}
+$ where:
+
+- $ y_{11} = \ddot{x}_{r1}; $
+- $ y_{12} = \ddot{x}_{r2}; $
+- $ y_{21} = 0; $
+- $ y_{22} = \ddot{x}_{r1} + \ddot{x}_{r2}; $
+- $ y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}); $
+- $ y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2}); $
+- $ y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2); $
+- $ y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2); $
+
+## Control Law
+
+Estimated values of unmodeled dynamics:
+
+$ b^{-1} = 5 H $
+$ f = 5 (\ddot{x}_d - 2 \lambda \dot{e} - \lambda^{2} e); $
+
+Adaptive sliding surface definition
+
+$ s = \dot{e} + 2 \lambda * e + \lambda^{2} \int^{t}_{0}{e} $
+
+Given control law:
+
+$$ u = u_a + u_{eq} $$
+
+such that:
+
+$ u_a = \hat{b}^{-1} (Y \hat{a} - k_D s) $
+$  u_{eq} =  \hat{b}^{-1} (\ddot{x}_d - \hat{f} - 2 \lambda \dot{e} - \lambda^{2} e) $
+
+The update of estimated parameters:
+
+$ \dot{\hat{a}} = - \Gamma Y^{T} s $
+
+therefore:
+
+$ a = \int{\dot{\hat{a}}}\space dt $
+
 ### Numerical Considerations
 
 #### Integrators
 
-Used limited output integrators between $ -2\pi $ and $ +2\pi $.
+Used limited output integrators in the arm model to be between $ -pi $ and $ +pi $.
 
 #### Safe Matrix Inverse
 
