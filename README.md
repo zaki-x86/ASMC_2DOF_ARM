@@ -94,10 +94,10 @@ $$ V_2 = 2.7 $$
 
 Given initial conditions:
 
-$$ x_1 = 0.3 \space rad $$ 
-and 
-$$ x_2 = 0.5 \space rad $$
-
+```math
+x_1 = 0.3 \space rad \\ 
+x_2 = 0.5 \space rad
+```
 ![alt text](assets/2DOF_Arm_Simulink_Model.png)
 
 ## System Signals
