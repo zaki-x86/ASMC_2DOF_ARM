@@ -33,9 +33,9 @@ $$
 
 where:
 
-- $$ M_{11} = a_1 + 2 a_3 cos(x_2) - 2 a_4 sin(x_2) $$
-- $$ M_{12} = M_{21} = a_2 + a_3 cos(x_2) + a_4 cos(x_2) $$
-- $$ M_{22} = a_2 $$
+$$ M_{11} = a_1 + 2 a_3 cos(x_2) - 2 a_4 sin(x_2) $$
+$$ M_{12} = M_{21} = a_2 + a_3 cos(x_2) + a_4 cos(x_2) $$
+$$ M_{22} = a_2 $$
 
 $$
 C = \begin{bmatrix}
@@ -46,7 +46,7 @@ $$
 
 where:
 
-- $$ c = a_3 sin(x_2) - a_4 cos(x_2) $$
+$$ c = a_3 sin(x_2) - a_4 cos(x_2) $$
 
 Estimated parameters:
 
@@ -75,7 +75,7 @@ $$
 
 where:
 
-- $$ F_{c1} = F_{c2} = 5$$
+$$ F_{c1} = F_{c2} = 5$$
 
 and
 
@@ -88,15 +88,15 @@ $$
 
 where:
 
-- $$ V_1 = 5.5 $$ 
+$$ V_1 = 5.5 $$ 
   and 
-- $$ V_2 = 2.7 $$
+$$ V_2 = 2.7 $$
 
 Given initial conditions:
 
-- $$ x_1 = 0.3 \space rad $$ 
+$$ x_1 = 0.3 \space rad $$ 
 and 
-- $$ x_2 = 0.5 \space rad $$
+$$ x_2 = 0.5 \space rad $$
 
 ![alt text](assets/2DOF_Arm_Simulink_Model.png)
 
@@ -111,14 +111,14 @@ $$
 
 where:
 
-- $$ y_{11} = \ddot{x}_{r1} $$
-- $$ y_{12} = \ddot{x}_{r2} $$
-- $$ y_{21} = 0 $$
-- $$ y_{22} = \ddot{x}_{r1} + \ddot{x}_{r2} $$
-- $$ y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}) $$
-- $$ y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2}) $$
-- $$ y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2) $$
-- $$ y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2) $$
+$$ y_{11} = \ddot{x}_{r1} $$
+$$ y_{12} = \ddot{x}_{r2} $$
+$$ y_{21} = 0 $$
+$$ y_{22} = \ddot{x}_{r1} + \ddot{x}_{r2} $$
+$$ y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}) $$
+$$ y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2}) $$
+$$ y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2) $$
+$$ y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2) $$
 
 ## Control Law
 
