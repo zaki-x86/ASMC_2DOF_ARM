@@ -2,9 +2,9 @@
 
 ## 2DOF Robot Arm Model on Simulink
 
-$
+$$
 \ddot{x} = H^{-1} (\tau - C \dot{x} - F_c sgn(\dot{x}) - V \dot{x})
-$
+$$
 
 Where:
 
