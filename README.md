@@ -95,8 +95,10 @@ $$ V_2 = 2.7 $$
 Given initial conditions:
 
 ```math
+\begin{aligned}
 x_1 = 0.3 \space rad \\ 
 x_2 = 0.5 \space rad
+\end{aligned}
 ```
 ![alt text](assets/2DOF_Arm_Simulink_Model.png)
 
