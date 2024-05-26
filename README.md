@@ -112,12 +112,19 @@ $$
 where:
 
 $$ y_{11} = \ddot{x}_{r1} $$
+
 $$ y_{12} = \ddot{x}_{r2} $$
+
 $$ y_{21} = 0 $$
+
 $$ y_{22} = \ddot{x}_{r1} + \ddot{x}_{r2} $$
+
 $$ y_{13} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) cos(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) sin(x_{2}) $$
+
 $$ y_{14} = (2\ddot{x}_{r1} + \ddot{x}_{r2}) sin(x_{2}) -  (\dot{x}_{2} \dot{x}_{r1} + \dot{x}_{1} \dot{x}_{r2} + \dot{x}_{2} \dot{x}_{r2}) cos(x_{2}) $$
+
 $$ y_{23} = \ddot{x}_{r1} cos(x_2) + \dot{x}_1  \dot{x}_{r1} sin(x_2) $$
+
 $$ y_{24} = \ddot{x}_{r1} sin(x_2) + \dot{x}_1 \dot{x}_{r1} cos(x_2) $$
 
 ## Control Law
@@ -130,7 +137,7 @@ $$ f = 5 (\ddot{x}_d - 2 \lambda \dot{e} - \lambda^{2} e) $$
 Adaptive sliding surface definition
 
 $$
-s = \dot{e} + 2 \lambda * e + \lambda^{2} \int^{t}_{0}{e}
+s = \dot{e} + 2 \lambda e + \lambda^{2} \int^{t}_{0}{e}
 $$
 
 Given control law:
